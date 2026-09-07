@@ -1,25 +1,25 @@
 class WorkCheck < Formula
   desc "tiny office check-in board"
   homepage "https://github.com/wombat-inc/homebrew-tap"
-  version "1.4.0"
+  version "1.5.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/wombat-inc/homebrew-tap/releases/download/work-check-v1.4.0/work-check-darwin-arm64"
-      sha256 "86e1c26ab59f9c9e32983ee772c02763bc5b9bcbeafba95324b6a53aad98bf66"
+      url "https://github.com/wombat-inc/homebrew-tap/releases/download/work-check-v1.5.0/work-check-darwin-arm64"
+      sha256 "327b6206004300072b3d2b1bb980f3d7695785a56f10d69c42cd8ce52fdf17f4"
     else
-      url "https://github.com/wombat-inc/homebrew-tap/releases/download/work-check-v1.4.0/work-check-darwin-x64"
-      sha256 "12b6cbc0ea216dac0ad74012d5eab1a1065891029aa9583b53501021f2cf1d71"
+      url "https://github.com/wombat-inc/homebrew-tap/releases/download/work-check-v1.5.0/work-check-darwin-x64"
+      sha256 "9a9ab47ba9ab893898e3d4c82f713660951050a8aa5d4f0ca668616e69b17d37"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/wombat-inc/homebrew-tap/releases/download/work-check-v1.4.0/work-check-linux-x64"
-      sha256 "b338f2870f4bf1d795c5d3274b278ee366e305c53c6c75dc232ba2602593fb81"
+      url "https://github.com/wombat-inc/homebrew-tap/releases/download/work-check-v1.5.0/work-check-linux-x64"
+      sha256 "677308a3bf92b511942a04dd67013cfa29a3b72c896e2adcb32335db8732626a"
     else
-      url "https://github.com/wombat-inc/homebrew-tap/releases/download/work-check-v1.4.0/work-check-linux-arm64"
-      sha256 "2a2e64eba70252c9273cc01ba15985b5ff9ffe70c948c8f8a946c9df7d022021"
+      url "https://github.com/wombat-inc/homebrew-tap/releases/download/work-check-v1.5.0/work-check-linux-arm64"
+      sha256 "f40f9a39f8a1d05a4f9b71a17221787f59979ac0ab21542b2c95bb26793a6076"
     end
   end
 
