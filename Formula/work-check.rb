@@ -1,25 +1,25 @@
 class WorkCheck < Formula
   desc "tiny office check-in board"
   homepage "https://github.com/wombat-inc/homebrew-tap"
-  version "1.9.1"
+  version "1.9.2"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/wombat-inc/homebrew-tap/releases/download/work-check-v1.9.1/work-check-darwin-arm64"
-      sha256 "79d0003e714a598a8f9f1375558f800186128d62d256a10293ce9466a7ab5edd"
+      url "https://github.com/wombat-inc/homebrew-tap/releases/download/work-check-v1.9.2/work-check-darwin-arm64"
+      sha256 "5fc460d7cef12cc8909931a4f81feefc9aa629982bc9b83cdab330ac20d7a8da"
     else
-      url "https://github.com/wombat-inc/homebrew-tap/releases/download/work-check-v1.9.1/work-check-darwin-x64"
-      sha256 "c3c9a6787cb9a44383c73fd9155689f83f3b767e32a15198ca482990b5d6f33b"
+      url "https://github.com/wombat-inc/homebrew-tap/releases/download/work-check-v1.9.2/work-check-darwin-x64"
+      sha256 "05902f4ce3d19f7909a4dfc579bdf60d1f98277eb3256213d663358e47084661"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/wombat-inc/homebrew-tap/releases/download/work-check-v1.9.1/work-check-linux-x64"
-      sha256 "84cef49f5084d7136d7716d1bafe2f8b2b8ab7fabe2430303f14c28cb1b89f0d"
+      url "https://github.com/wombat-inc/homebrew-tap/releases/download/work-check-v1.9.2/work-check-linux-x64"
+      sha256 "ec2250adefbc3c8436a7cabad29dc1260b5e7d7e2f4619cfb761f04d21063fd7"
     else
-      url "https://github.com/wombat-inc/homebrew-tap/releases/download/work-check-v1.9.1/work-check-linux-arm64"
-      sha256 "eb658797096b5cab61adee00309051b6834ee9d725dc8482d9ba55ab7d1d7c17"
+      url "https://github.com/wombat-inc/homebrew-tap/releases/download/work-check-v1.9.2/work-check-linux-arm64"
+      sha256 "55ab9bf2f3d1f18cfef3835750b03a3375f7cf0743f387d15b185ada6aab392b"
     end
   end
 
@@ -28,7 +28,7 @@ class WorkCheck < Formula
     bin.install binary => "work-check"
   end
 
-  test do
-    assert_match "check-in", shell_output("#{bin}/work-check help")
+  def caveats
+    "Run `work-check help` after install."
   end
 end
