@@ -6,20 +6,20 @@ class WorkCheck < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/wombat-inc/homebrew-tap/releases/download/work-check-v1.7.0/work-check-darwin-arm64"
-      sha256 "451cd7a51e71281106a99e6ca8bda3254017f1a4e7ef5d8c3c7b1f9f4bf5f8ba"
+      sha256 "3aab9b90e134d5cccaa3f7c72538a32a578adb9e1cc63d118375ebf1952b365c"
     else
       url "https://github.com/wombat-inc/homebrew-tap/releases/download/work-check-v1.7.0/work-check-darwin-x64"
-      sha256 "c5847a49b27f88aba49e927c4bd16a82effe4c6d6845e6e1966c42a7628c96f6"
+      sha256 "16c3360c7fef1c928778aa89984f010c5728307ee10fb4f826d33b53a317f37b"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
       url "https://github.com/wombat-inc/homebrew-tap/releases/download/work-check-v1.7.0/work-check-linux-x64"
-      sha256 "5544777789aff0db9da8e0669a589bccb3a0946bf27d939cf0a2568f7d174015"
+      sha256 "0f1417d9bdd8d781fa23cf7de3c0645bb0bd57f2289ac3d7242a6363b45f1d50"
     else
       url "https://github.com/wombat-inc/homebrew-tap/releases/download/work-check-v1.7.0/work-check-linux-arm64"
-      sha256 "d24eb3a9a7f1017831f17b96f58bd6b26624c69ddec25ee45000d4bc40ae599b"
+      sha256 "2d568f1fb25c149b7bebb89331c5166462e87db3f76fb845a5016a180f1ea2c2"
     end
   end
 
